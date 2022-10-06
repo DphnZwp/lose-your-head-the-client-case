@@ -25,7 +25,8 @@
       <ul>
         <li class="header__nav-link"><a class="header__nav-link-text" href="/"><strong>Home</strong></a></li>
         <li class="header__nav-link"><a class="header__nav-link-text" href="/"><strong>Read the stories</strong></a></li>
-        <li class="header__nav-link"><a class="header__nav-link-text" href="/">A Spanish migrant looking for greener pastures</a></li>
+        <li class="header__nav-link"><a class="header__nav-link-text" href="/">1. A Spanish migrant looking for greener pastures</a></li>
+        <li class="header__nav-link"><a class="header__nav-link-text" href="/">2.  The Returnees from Brazil who changed Lagos</a></li>
       </ul>
 		</nav>
 	{/if}
@@ -77,9 +78,9 @@
 
   .header__nav {
     padding-top: 12em;
-    padding-left: 2em;
-    padding-right: 2em;
-    width: 15em;
+    padding-left: 3em;
+    padding-right: 3em;
+    width: 20em;
     height: 100%;
     position: fixed;
     top: 0;
@@ -109,7 +110,7 @@
     height: 3px;
     left: 0;
     background-color: var(--white);
-    transform-origin: bottom left;
+    transform-origin: bottom right;
     transition: transform .5s;
   }
 
