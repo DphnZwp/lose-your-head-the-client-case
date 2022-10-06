@@ -25,8 +25,8 @@
       <ul>
         <li class="header__nav-link"><a class="header__nav-link-text" href="/"><strong>Home</strong></a></li>
         <li class="header__nav-link"><a class="header__nav-link-text" href="/"><strong>Read the stories</strong></a></li>
-        <li class="header__nav-link"><a class="header__nav-link-text" href="/">1. A Spanish migrant looking for greener pastures</a></li>
-        <li class="header__nav-link"><a class="header__nav-link-text" href="/">2.  The Returnees from Brazil who changed Lagos</a></li>
+        <li class="header__nav-link"><a class="header__nav-link-text" href="/1">1. A Spanish migrant looking for greener pastures</a></li>
+        <li class="header__nav-link"><a class="header__nav-link-text" href="/2">2.  The Returnees from Brazil who changed Lagos</a></li>
       </ul>
 		</nav>
 	{/if}
