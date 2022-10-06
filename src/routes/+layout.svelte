@@ -1,20 +1,18 @@
 <script>
-	import Nav from '$lib/components/Nav.svelte';
+	import Header from '$lib/components/Header.svelte';
 </script>
 
 <svelte:head>
-	<title>w00t</title>
+	<title>Ilojo Bar</title>
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600;700&display=swap" rel="stylesheet">
 </svelte:head>
 
-<Nav />
+<Header />
 
 <main>
 	<slot />
 </main>
-
-<footer>
-	<p>Copyleft 2022, all wrongs reversed.</p>
-</footer>
 
 <style>
 </style>

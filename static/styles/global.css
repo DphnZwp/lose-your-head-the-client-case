@@ -1,3 +1,8 @@
+:root {
+	--black: #000;
+	--white: #fff;
+}
+
 * {
 	margin: 0;
   padding: 0;
@@ -5,5 +10,17 @@
 }
 
 body {
+	font-family: 'Signika', sans-serif;
+	color: var(--white);
 	background-color: darkred;
+}
+
+h1 {
+	font-size: 6.25rem;
+	text-align: center;
+}
+
+p {
+	font-size: 1.25rem;
+	line-height: 1.5;
 }
