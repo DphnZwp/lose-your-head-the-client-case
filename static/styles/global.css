@@ -12,7 +12,7 @@
 body {
 	font-family: 'Signika', sans-serif;
 	color: var(--white);
-	background-color: darkred;
+	background-image: url(/background.webp);
 }
 
 h1 {
