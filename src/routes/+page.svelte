@@ -1,12 +1,15 @@
 <script>
 	import * as prismic from '@prismicio/helpers';
 	export let data;
-	let { document } = data;
-  console.log(data.documents);
+  const stories = data.documents
+  console.log(stories);
 </script>
 
 <section>
-	{@html prismic.asHTML(document.data.title)}
+	<!-- {@html prismic.asHTML(documents[0].data.title)} -->
+  {#each stories as data}
+    {@html prismic.asHTML(data.data.title)}
+  {/each}
 </section>
 
 <style>
