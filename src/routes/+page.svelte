@@ -15,10 +15,10 @@
         <section class="story__title-background">
           {@html prismic.asHTML(data.data.title)}
         </section>
+        <a class="story__link" href="/{data.uid}">Read story {data.uid} »</a>
         <section class="story__image-background">
           <img class="story__image" src="{data.data.image.url}" alt="">
         </section>
-        <a class="story__link" href="/{data.uid}">Read story {data.uid}</a>
       </article>
     {/each}
   </section>
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #CB9B5B;
+    background-color: var(--brown);
   }
 
   .story__title-background::before {
@@ -97,15 +97,21 @@
   }
 
   .story__link {
-    margin-top: 1.5em;
+    margin-bottom: 1.5em;
     margin-right: auto;
     margin-left: auto;
     padding: 1em 2em;
+    font-size: 1.25rem;
     color: var(--black);
-    text-align: center;
-    background-color: var(--white);
+    font-weight: 700;
     text-decoration: none;
+    text-align: center;
     border-radius: 2em;
+    background-color: var(--brown);
+  }
+
+  .story__link:hover {
+    background-color: var(--white);
   }
 
   @media (min-width: 70em) {
