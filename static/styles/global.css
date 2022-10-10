@@ -50,5 +50,6 @@ main {
 @media (min-width: 70em) {
 	main {
 		flex-direction: row;
+		flex-wrap: wrap;
 	}
 }
