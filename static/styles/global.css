@@ -14,8 +14,9 @@
 body {
 	font-family: 'Signika', sans-serif;
 	color: var(--white);
-	background-image: url(/background.webp);
+	background-image: url(/images/background.webp);
 	background-size: cover;
+	height: 100%;
 }
 
 h1,
@@ -28,6 +29,7 @@ p {
 h1 {
 	font-size: 4.375rem;
 	text-align: center;
+	line-height: 1.1;
 }
 
 h2 {
@@ -38,12 +40,18 @@ h2 {
 
 p {
 	font-size: 1.25rem;
-	line-height: 1.5;
+	line-height: 1.6;
+	margin-bottom: 1rem;
 }
 
 main {
 	display: flex;
 	flex-direction: column;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: black;
+  outline: 1px solid slategrey;
 }
 
 /* LAPTOP */

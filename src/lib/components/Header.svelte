@@ -1,16 +1,18 @@
 <script>
 	import { fly } from 'svelte/transition';
+  import { page } from '$app/stores'
+
 	let active = false;
 </script>
 
 
 <header class="header">
   <a href="/" class="header__link">
-		<img class="header__arrow" src="/left-arrow.svg" alt="">
+		<img class="header__arrow" src="/images/left-arrow.svg" alt="">
 	</a>
 
 	<a href="/" class="header__link">
-		<img class="header__logo" src="/logo.svg" alt="">
+		<img class="header__logo" src="/images/logo.svg" alt="">
 	</a>
   <button class="header__menu" class:active on:click={() => (active = !active)}>
 		<svg class="header__menu-icon" aria-hidden="true" focusable="false" width="108" height="64" viewBox="0 0 108 64" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,10 +25,34 @@
 	{#if active}
 		<nav class="header__nav" transition:fly="{{ x: 400, duration: 1000 }}">
       <ul>
-        <li class="header__nav-link"><a class="header__nav-link-text" href="/"><strong>Home</strong></a></li>
-        <li class="header__nav-link"><a class="header__nav-link-text" href="/"><strong>Read the stories</strong></a></li>
-        <li class="header__nav-link"><a class="header__nav-link-text" href="/1">1. A Spanish migrant looking for greener pastures</a></li>
-        <li class="header__nav-link"><a class="header__nav-link-text" href="/2">2.  The Returnees from Brazil who changed Lagos</a></li>
+        <li class="header__nav-link"><a rel="external" class="header__nav-link-text" href="/"><strong>Home</strong></a></li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/"} href="/"><strong>Read the stories</strong></a>
+        </li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/storyone"} href="/storyone">1. A Spanish migrant looking for greener pastures</a>
+        </li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/storytwo"} href="/storytwo">2. Returnees from Brazil who changed Lagos</a>
+        </li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/storythree"} href="/storythree">3. A VIP from Abeokuta visits Fernandez' house</a>
+        </li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/storyfour"} href="/storyfour">4. The Macaulay Connection</a>
+        </li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/storyfive"} href="/storyfive">5. A Family House to the Olaiyas</a>
+        </li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/storysix"} href="/storysix">6. A dark past</a>
+        </li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/storyseven"} href="/storyseven">7. Botched dreams for Ilojo Bar</a>
+        </li>
+        <li class="header__nav-link">
+          <a rel="external" class="header__nav-link-text" class:link-active={$page.url.pathname === "/storyeight"} href="/storyeight">8. The story of the angel</a>
+        </li>
       </ul>
 		</nav>
 	{/if}
@@ -78,12 +104,12 @@
   }
 
   .header__nav {
-    padding-top: 12em;
-    padding-left: 3em;
+    padding-top: 10em;
     padding-right: 3em;
-    width: 20em;
-    height: 100%;
-    position: fixed;
+    padding-bottom: 3em;
+    padding-left: 3em;
+    width: 24em;
+    position: absolute;
     top: 0;
     right: 0;
     background-color: var(--black);
@@ -118,6 +144,18 @@
 
   .header__nav-link-text:hover::after {
     transform: scaleX(1);
+  }
+
+  .link-active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    transform: scaleX(1);
+    height: 3px;
+    left: 0;
+    background-color: var(--white);
+    transform-origin: bottom right;
+    transition: transform .5s;
   }
 
   @media (min-width: 45em) {
