@@ -18,7 +18,7 @@ De stories pagina van Ilojo Bar.
   * [Licentie](#licentie)
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+Op deze pagina kan je verschillende verhalen lezen over Ilojo Bar.
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
