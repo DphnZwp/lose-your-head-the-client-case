@@ -3,7 +3,9 @@ Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uit
 De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # 🍸 Ilojo Bar stories
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+De stories pagina van Ilojo Bar. 
+![screencapture-127-0-0-1-5173-2022-10-14-11_54_54](https://user-images.githubusercontent.com/69635977/195827530-bbf84351-31c8-4c44-9e75-a8f2e48e64c6.png)
+
 
 ## Inhoudsopgave
 
