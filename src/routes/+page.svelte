@@ -2,7 +2,7 @@
 	import * as prismic from '@prismicio/helpers';
 	export let data;
   const stories = data.documents
-  // console.log(stories);
+  console.log(stories);
 </script>
 
   <header class="hero">
@@ -25,7 +25,7 @@
     {#each stories as data, index}
       <article class="story">
         <section class="story__title-background">
-          {@html prismic.asHTML(data.data.title1)}
+          <h2>{data.data.title}</h2>
         </section>
         <a class="story__link" href="/{data.uid}">Read story {index+1} »</a>
         <section class="story__image-background">
